@@ -133,8 +133,6 @@ while True:
         break
     i += 1
 
-print(f'список товаров:{inventory_tuple_list}')
-
 output_dict = dict({})
 for product in inventory_tuple_list:
     for key, value in product[-1].items():
