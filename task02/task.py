@@ -56,6 +56,23 @@ print(seasons_list[i])
 print(seasons_dict.get(i + 1))
 print(seasons_dict_ext.get(month_number))
 
+
+
+seasons_dict = {0 : 'зима', 1 : 'весна', 2 : 'лето', 3 : 'осень', 4: 'Такого месяца не существует'}
+seasons_list = ['зима', 'весна', 'лето', 'осень', 'Такого месяца не существует']
+month = int(input("Введите номер месяца  "))
+month_index = 4
+if month <= 2 or month == 12:
+    month_index = 0
+elif month >= 3 and month <= 5:
+    month_index = 1
+elif month == 6 or month == 7 or month == 8:
+    month_index = 2
+elif month == 9 or month == 10 or month == 11:
+    month_index = 3
+print(seasons_list[month_index])
+print(seasons_dict.get(month_index))
+
 # 4. Пользователь вводит строку из нескольких слов, разделённых пробелами.
 # Вывести каждое слово с новой строки.
 # Строки необходимо пронумеровать.
