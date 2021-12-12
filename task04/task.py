@@ -69,7 +69,7 @@ def task_3_get_multiplicity_list(start_range: int = 20, end_range: int = 240) ->
     print(f"Список чисел кратных 20 или 21 в диапазоне [{start_range}..{end_range}): ", list)
 
 
-task_3_get_multiplicity_list()
+task_3_get_multiplicity_list() # 240 не вошло в результаты. Функция range исключает цифру правого диапазона. 
 
 print_log_info(0, index)
 index += 1
